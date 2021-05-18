@@ -13,9 +13,8 @@ if(!isset($_SESSION['giohang'])) $_SESSION['giohang']=array(); //khoi tao gio ha
 
 	<title>website ban hang</title>
 	<link href="css/stype.css" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
 
-	<link rel="stylesheet" type="text/css" href="menu/sdmenu.css" />
-	<script type="text/javascript" src="menu/sdmenu.js">	</script>
 
 	<script type="text/javascript">
 	// <![CDATA[

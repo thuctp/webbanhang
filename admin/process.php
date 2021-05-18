@@ -185,4 +185,22 @@ if(isset($_GET['sanphamxoa']))
 
 }
 
+/*****************************************************
+ *	xử lý phần xoa thông tin khách hàng
+ ******************************************************/
+if(isset($_GET['xoanguoidung']))
+{
+    $s = "delete from nncms_nguoidung where idNguoiDung={$_GET['xoanguoidung']}";
+    if(mysqli_query($con, $s))
+    {
+//        header("location:index.php?key=dsuser");
+        echo "<script>alert('Xoa thanh cong');location.href='index.php?key=dsuser';</script>";
+    }
+    else
+    {
+//        echo $s;
+        echo "<script>alert('Xoa khong thanh cong');location.href='index.php?key=dsuser';</script>";
+    }
+}
+
 ?>
